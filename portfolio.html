@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dean's Site</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+
+<center>Deanna Bootan</center>
+
+</header>
+
+
+<body>
+
+
+
+<ul class="nav" id="navigation">
+ <a href="javascript:void(0);" class="icon" onclick="toggle()">&#9776;</a>
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#portfolio" class="active">Portfolio</a>
+  <a href="#contact">Contact</a>
+
+</ul>
+
+
+
+
+
+<div class="container">
+  <div class="grid">
+
+   
+    <div class="cell">
+   <img src="image.png" class="responsive-image" style="width:100%;cursor:pointer" onclick="openModal();currentDiv(1)">
+    </div>
+    <div class="cell">
+   <img src="image.png" class="responsive-image" style="width:100%;cursor:pointer"  onclick="openModal();currentDiv(2)">
+    </div>
+    <div class="cell">
+    <img src="image.png" class="responsive-image" style="width:100%;cursor:pointer"  onclick="openModal();currentDiv(3)">
+    </div>
+    <div class="cell">
+    <img src="image.png" class="responsive-image" style="width:100%;cursor:pointer" onclick="openModal();currentDiv(4)">
+    </div>
+    <div class="cell">
+      <img src="image.png" class="responsive-image" style="width:100%;cursor:pointer" onclick="openModal();currentDiv(5)">
+    </div>
+    <div class="cell">
+      <img src="image.png" class="responsive-image" style="width:100%;cursor:pointer" onclick="openModal();currentDiv(6)">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+function toggle() {
+    var x = document.getElementById("navigation");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+</script>
+
+
+
+</body>
+</html>
+
